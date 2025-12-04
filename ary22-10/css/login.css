@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F5D7DE;
+    color: #5a4a42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Caixa de login ===== */
+.login-box {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #C86C7F;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+/* Mensagens de alerta */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+/* ===== Formulário ===== */
+.form-group {
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #5a4a42;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #C86C7F;
+    outline: none;
+}
+
+/* ===== Checkbox ===== */
+.checkbox {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.checkbox label {
+    font-size: 0.95rem;
+    color: #7a6a62;
+}
+
+/* ===== Botão de login ===== */
+button {
+    background-color: #8b7355;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(139, 115, 85, 0.3);
+}
+
+button:hover {
+    background-color: #7a6348;
+    transform: translateY(-2px);
+}
+
+/* ===== Link para cadastro ===== */
+.register-link {
+    margin-top: 1.5rem;
+}
+
+.register-link p {
+    margin-bottom: 0.5rem;
+    color: #7a6a62;
+}
+
+.btn-cadastrar {
+    background-color: #99D6DB;
+    color: #5a4a42;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-cadastrar:hover {
+    background-color: #89c5ca;
+    transform: translateY(-2px);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .login-box h2 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

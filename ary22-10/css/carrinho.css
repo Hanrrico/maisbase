@@ -1,0 +1,339 @@
+/* Estilos para a página do carrinho */
+.carrinho-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+.carrinho-vazio {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+.carrinho-item {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+.carrinho-item-imagem {
+    width: 120px;
+    height: 120px;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.carrinho-item-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carrinho-item-info {
+    flex-grow: 1;
+}
+
+.carrinho-item-nome {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #5a4a42;
+}
+
+.carrinho-item-preco {
+    font-size: 1.2rem;
+    color: #8b7355;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.carrinho-item-subtotal {
+    font-size: 1rem;
+    color: #c86c7f;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.carrinho-controles {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quantidade-controle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantidade-controle input {
+    width: 60px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-remover {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-remover:hover {
+    background-color: #d32f2f;
+}
+
+.btn-atualizar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-atualizar:hover {
+    background-color: #45a049;
+}
+
+.carrinho-total {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.total-valor {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c86c7f;
+    margin: 1rem 0;
+}
+
+.resumo-valores {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.linha-resumo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.linha-resumo:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.linha-resumo.total-geral {
+    font-size: 1.3rem;
+    padding-top: 0.8rem;
+    border-top: 2px solid #c86c7f;
+    margin-top: 0.8rem;
+}
+
+.instrucoes-finalizacao {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #99D6DB;
+}
+
+.instrucoes-finalizacao p {
+    margin: 0.8rem 0;
+    font-size: 0.95rem;
+    color: #5a4a42;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.instrucoes-finalizacao p strong {
+    color: #c86c7f;
+}
+
+.acoes-carrinho {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btn-continuar, .btn-finalizar {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-continuar {
+    background-color: #99D6DB;
+    color: #5a4a42;
+}
+
+.btn-continuar:hover {
+    background-color: #88c6cb;
+}
+
+.btn-finalizar {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-finalizar:hover {
+    background: linear-gradient(135deg, #128C7E, #25D366);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.placeholder-imagem-carrinho {
+    width: 120px;
+    height: 120px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #666;
+}
+
+/* Estilos para o carrinho no index */
+.carrinho-form {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.quantidade-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.quantidade-container label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.quantidade-container input {
+    width: 60px;
+    padding: 0.25rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.btn-carrinho {
+    background-color: #c86c7f;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn-carrinho:hover {
+    background-color: #a44f62;
+}
+
+.btn-carrinho.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.sucesso {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #c8e6c9;
+}
+
+.whatsapp-icon {
+    font-size: 1.2rem;
+}
+
+/* Responsividade para carrinho */
+@media (max-width: 768px) {
+    .carrinho-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .carrinho-item-imagem {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .carrinho-controles {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .acoes-carrinho {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn-continuar, .btn-finalizar {
+        width: 100%;
+    }
+    
+    .carrinho-container {
+        padding: 1rem 5%;
+    }
+    
+    .linha-resumo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    
+    .resumo-valores {
+        padding: 0.8rem;
+    }
+    
+    .instrucoes-finalizacao {
+        padding: 1rem;
+    }
+    
+    .btn-finalizar {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}

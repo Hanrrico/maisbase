@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #99D6DB;
+    color: #5a4a42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Caixa de cadastro ===== */
+.register-box {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.register-box h2 {
+    color: #C86C7F;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* ===== Formulário ===== */
+.form-group {
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #5a4a42;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #C86C7F;
+    outline: none;
+}
+
+/* ===== Botão de cadastro ===== */
+button {
+    background-color: #8b7355;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(139, 115, 85, 0.3);
+}
+
+button:hover {
+    background-color: #7a6348;
+    transform: translateY(-2px);
+}
+
+/* ===== Link para login ===== */
+.login-link {
+    margin-top: 1.5rem;
+}
+
+.login-link p {
+    margin-bottom: 0.5rem;
+    color: #7a6a62;
+}
+
+.btn-login {
+    background-color: #F5D7DE;
+    color: #5a4a42;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #e7c1c9;
+    transform: translateY(-2px);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 480px) {
+    .register-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .register-box h2 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
